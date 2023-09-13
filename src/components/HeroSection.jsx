@@ -1,8 +1,7 @@
-import { Title } from "@mui/icons-material";
 import styled from "styled-components";
 import { Bio } from "../data/Constants";
 import TypewriterComponent from "typewriter-effect";
-
+import HeroImg from "../images/Hero.jpg"
 
 const HeroContainer = styled.div`
     background-color: ${({theme}) => theme.card_light};
@@ -22,7 +21,7 @@ const HeroContainer = styled.div`
     clip-path: polygon(0 0,100% 0,100% 100%,70% 95%,0 100%);
 `;
 
-const HeroBg = styled.div`
+export const HeroBg = styled.div`
     position: absolute;
     display: flex;
     justify-content: end;
@@ -34,8 +33,8 @@ const HeroBg = styled.div`
     width: 100%;
     height: 100%;
     padding: 0 30px;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    /* -webkit-transform: translateX(-50%) translateY(-50%); */
+    /* transform: translateX(-50%) translateY(-50%); */
 
     @media screen and (max-width: 960px) {
         padding: 0 0;
@@ -82,8 +81,8 @@ const HeroRightContainer = styled.div`
         margin-bottom: 30px;
     }
 `;
-const Title_ = styled.div`
-    font-size: 50px;
+const Titles = styled.div`
+    font-size: 40px;
     font-weight: 700;
     color: ${({theme}) => theme.text_primary};
     line-height: 68px;
@@ -108,15 +107,62 @@ const TextLoop = styled.div`
     @media screen and (max-width: 960px) {
         text-align: center;
     }
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 640px) {
         font-size: 22px;
         line-height: 48px;
         margin-bottom: 16px;
     }
-    `;
+`;
 const Span = styled.span`
-    color: ${({theme}) => theme.text_primary};
+    color: ${({theme}) => theme.primary};
     cursor: pointer;
+`;
+const SubTitle = styled.div`
+    font-size  : 20px;
+    color: ${({theme}) => theme.text_primary+95};
+    line-height: 32px;
+    margin-bottom: 42px;
+
+    @media screen and (max-width: 960px) {
+        text-align: center;
+    }
+    @media screen and (max-width: 640px) {
+        font-size: 16px;
+    }
+`;
+const ResumeButton = styled.a`
+    cursor: pointer;
+    appearance: button;
+    text-decoration: none;
+    width: 95%;
+    max-width: 300px;
+    text-align: center;
+    padding: 16px 0;
+    color: ${({theme}) => theme.white};
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out !important;
+    background: hsla(271, 100%, 50%, 1);
+    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634; 
+    :hover{
+        transform: scale(1.05);
+        transition: all 0.4s ease-in-out;
+        /* filter: brightness(1); */
+    }
+`;
+const Image = styled.img`
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+    max-height: 400px;
+    max-width: 400px;
+    object-fit: cover;
+    object-position: center;
+
+    /* @media screen and (max-width: 960px) {
+        width: 50%;
+    } */
 `;
 
 
@@ -129,7 +175,7 @@ const HeroSection = () =>{
                 </HeroBg>
                 <HeroInnerContainer>
                     <HeroLeftContainer>
-                        <Title_>Hi, I am<br/>{Bio.name}</Title_>
+                        <Titles>Hi, I am<br/>{Bio.name}</Titles>
                         <TextLoop>
                             I am a
                             <Span>
@@ -143,12 +189,12 @@ const HeroSection = () =>{
                             </Span>
                         </TextLoop>
                         <SubTitle>{Bio.description}</SubTitle>
-                        <ResumeButton hred={Bio.resume} target="_blank">
+                        <ResumeButton href={Bio.resume} target="_blank">
                             Check Resume
                         </ResumeButton>
                     </HeroLeftContainer>
                     <HeroRightContainer>
-
+                        <Image src={HeroImg} alt="Hero"/>
                     </HeroRightContainer>
                 </HeroInnerContainer>
             </HeroContainer>

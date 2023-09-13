@@ -188,7 +188,7 @@ const NavBar = () => {
           <NavLink href="#education">Education</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GithubButton>Github Profile</GithubButton>
+          <GithubButton onClick={()=>{}}>Github Profile</GithubButton>
         </ButtonContainer>
       </NavContainer>
       {
