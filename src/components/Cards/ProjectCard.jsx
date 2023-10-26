@@ -45,14 +45,60 @@ const Details = styled.div`
     padding: 0px 2px;
 `;
 
+const Tag = styled.span`
+    font-size: 12px;
+    font-weight: 400;
+    color: ${({theme}) => theme.primary};
+    background-color: ${({theme}) => theme.primary+15};
+    padding: 2px 8px;
+    border-radius: 10px;
+`;
+const Title = styled.div`
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  color: ${({theme}) => theme.text_secondary};
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+`;
+
+const Date = styled.div`
+    width: 100%;
+    font-size: 10px;
+    font-weight: 500;
+    padding-left: 5px;
+    color: ${({theme}) => theme.text_secondary+80};
+    `;
+
+const Description = styled.div`
+    color: ${({theme}) => theme.text_secondary+80};
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    width: 100%;
+`;
 
 const ProjectCard = ({project}) =>{
-    return <Card> 
-            <Image src={project.image}/>
-            <Tags></Tags>
-            <Details></Details>
+    return (<Card> 
+            <Image src={project.image} alt="Project"/>
+            <Tags>
+                {project.tags.map((tag) => (
+                    <Tag key={tag}>{tag}</Tag>
+                ))}
+            </Tags>
+            <Details>
+                <Title>{project.title}</Title>
+                <Date>{project.date}</Date>
+                <Description>{project.description}</Description>
+            </Details>
                         
     </Card>
+    );
 };
 
 export default ProjectCard;

@@ -115,7 +115,7 @@ const SkillImage = styled.img`
 
 const Skills = () =>{
     return (
-        <Container>
+        <Container id="skills">
             <Wrapper>
                 <Titles>
                     Skills
@@ -125,12 +125,12 @@ const Skills = () =>{
                 </Desc>
                 <SkillsContainer>
                     {skills.map((item,index) =>(
-                        <Skill key={item.name}>
+                        <Skill key={index}>
                             <SkillTitle>{item.title}</SkillTitle>
                             <SkillList>
                                 {
-                                    item.skills.map((skill) =>(
-                                        <SkillItem>
+                                    item.skills.map((skill,ind) =>(
+                                        <SkillItem key={ind}>
                                             <SkillImage src={skill.image}/>{skill.name}
                                         </SkillItem>
                                     ))

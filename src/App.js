@@ -4,10 +4,11 @@ import { darkTheme } from './Utils/Themes';
 import NavBar from './components/NavBar'
 import HeroSection from './components/HeroSection'
 import Skills from './components/Skills'
-// import Education from './components/Education';
+import Education from './components/Education';
 import Projects  from './components/Projects';
 import {BrowserRouter as Router } from 'react-router-dom';
 import Experience from './components/Experience';
+import Footer from './components/Footer'
 
 
 const Body = styled.div`
@@ -41,9 +42,12 @@ function App() {
           <Wrapper>
             <Skills/>
             <Experience/>
-            {/* <Education/> */}
           </Wrapper>
           <Projects/>
+          <Wrapper>
+            <Education/>
+          </Wrapper>
+          <Footer/>
         </Body>
       </Router>
     </ThemeProvider>

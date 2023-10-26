@@ -4,15 +4,21 @@ import ProjectCard from "../components/Cards/ProjectCard"
 
 
 const Container = styled.div`
+    background: linear-gradient(
+        343.07deg,
+        rgba(132,59,206,0.06) 5.71%,
+        rgba(132,59,206,0) 64.83%
+    );
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     z-index: 1;
     align-items: center;
+    clip-path: polygon(0 0,100% 0, 100% 100%, 100% 98%, 0 100%);
 `;
 const Wrapper = styled.div`
-    max-width: 1100px;
+    max-width: 1200px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -20,6 +26,7 @@ const Wrapper = styled.div`
     align-items: center;
     width: 100%;
     gap: 12px;
+    padding: 10px 0px 100px 0px;
 `;
 
 const Titles = styled.div`
@@ -86,7 +93,6 @@ const CardContainer = styled.div`
 
 
 
-
 const Projects = () =>{
 
     return <Container id="projects">
@@ -103,7 +109,7 @@ const Projects = () =>{
                 </Preview>
                 <CardContainer>
                     {projects.map((project) => (
-                        <ProjectCard project/>
+                        <ProjectCard key={project.id} project={project}/>
                     ))}
                 </CardContainer>
             </Wrapper>

@@ -11,7 +11,7 @@ const Container = styled.div`
     position: relative;
     z-index: 1;
     align-items: center;
-    padding: 30px 0px;
+    padding: 50px 0px;
 `;
 const Wrapper = styled.div`
     max-width: 1100px;
@@ -60,14 +60,14 @@ const TimeLineSection = styled.div`
 
 const Experience = () => {
     return (
-        <Container>
+        <Container id="experience">
             <Wrapper>
                 <Titles>Experience & Certificates</Titles>
                 <Desc>Here are some of my projects and course taken</Desc>
                 <TimeLineSection>
                     <Timeline>
                         {experiences.map((experience,index) => (
-                            <TimelineItem>
+                            <TimelineItem key={index}>
                                 <TimelineSeparator>
                                     <TimelineDot variant="outlined" color="secondary" />
                                     {index !== experiences.length-1 && <TimelineConnector/>}
