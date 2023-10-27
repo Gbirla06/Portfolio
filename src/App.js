@@ -38,20 +38,20 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <Router>
         <NavBar/>
-        <Body>
-          <HeroSection/>
-          <Wrapper>
-            <Skills/>
-            <Experience/>
-          </Wrapper>
-          <Projects/>
-          <Wrapper>
-            <Education/>
-          </Wrapper>
-          <Contact/>
-          <Footer/>
-        </Body>
       </Router>
+      <Body>
+        <HeroSection/>
+        <Wrapper>
+          <Skills/>
+          <Experience/>
+        </Wrapper>
+        <Projects/>
+        <Wrapper>
+          <Education/>
+        </Wrapper>
+        <Contact/>
+        <Footer/>
+      </Body>
     </ThemeProvider>
   );
 }

@@ -62,9 +62,9 @@ export const Bio = {
             "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
         },
         {
-          name: "Postman",
+          name: "Turbo C++",
           image:
-            "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+            "https://th.bing.com/th/id/OIP.v39OSIQfZMt353urDvfxAgHaHa?pid=ImgDet&rs=1",
         },
       ],
     },
@@ -83,7 +83,7 @@ export const Bio = {
         "CSS",
         "JavaScript",
       ],
-      doc: "https://drive.google.com/file/d/1LGWJqzZuRutXKEmNwZnYgnEIVlcz5-kN/view?usp=drive_link",
+      doc: "https://github.com/Gbirla06/Portfolio/blob/main/src/images/Certification/InternPe.png?raw=true",
     },
   ];
   
@@ -120,6 +120,18 @@ export const Bio = {
   export const projects = [
     {
       id: 0,
+      title: "Hotel Management",
+      date: "Nov 2021 - Dec 2021",
+      description:
+        "I built a project about Hotel Management in which I used an old version like turbo c++. There is no strong reason for that because I am very familiar with turbo and we dont need to do ant extra setup for graphics. That's it. I used purely c++, nothing else, like I was moving. You can see it in a small white circle on the menu. In this project I am maintaining data of customers like those taking service from a particular hotel, like(ROYAL PALACE). It contains a well designed menu in which you can see option like:      1)BOOKING 2)VIEW MAP 3)VIEW DATA 4)CHECK OUT 5)VIEW ALL 6)RESTAURENT 7)EXIT ",
+      image:
+        "https://github.com/Gbirla06/Portfolio/blob/main/src/images/ProjectImgs/Hotel_Management.png?raw=true",
+      tags: ["C++","Graphics","Turbo C++", "Excel(.CSV)"],
+      github: "https://github.com/Gbirla06/Hotel_Management",
+      webapp: "https://box-office-app-seven.vercel.app/",
+    },
+    {
+      id: 1,
       title: "Calculator",
       date: "Apr 2022 - May 2022",
       description:
@@ -131,51 +143,39 @@ export const Bio = {
       webapp: "https://gbirla06.github.io/Calculator/",
     },
     {
-      id: 1,
+      id: 2,
       title: "Notes Making WebSite",
       date: "May 2023",
       description:
         "Introducing a note-making website that simplifies our daily life operations without the need for pen and paper.This website is designed to provide users with an easy-to-use platform for creating, modifying, and deleting notes online. So why use pen and paper when you can have all your notes in one place on this user-friendly website.Simplify your life with this note-making website and say goodbye to the hassle of paper notes forever.",
       image:
-        "../images/ProjectImgs/Calculator.PNG",
+        "https://github.com/Gbirla06/Portfolio/blob/main/src/images/ProjectImgs/Notes_Making.PNG?raw=true",
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Gbirla06/Notes_Making_Site",
       webapp: "https://gbirla06.github.io/Notes_Making_Site/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Online Clothing Shopping Web App",
       date: "July 2023",
       description:
         "Introducing a online clothing shopping website that simplifies our daily life operations at home..This Where style meets simplicity. Designed with a focus on intuitive navigation and a visually appealing interface, our app redefines your online shopping experience. ",
       image:
-        "../images/ProjectImgs/Calculator.PNG",
+        "https://github.com/Gbirla06/Portfolio/blob/main/src/images/ProjectImgs/Online_Shopping.PNG?raw=true",
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Gbirla06/E_commerce",
       webapp: "https://gbirla06.github.io/E_commerce/",
     },
     {
-      id: 3,
+      id: 4,
       title: "Box Office Web App",
       date: "July 2023",
       description:
         "Designed a React web application that allows users to search for movies based on their titles and cast members. Additionally, users can save their favorite movies for easy access. used TvMaze free api for content",
       image:
-        "../images/ProjectImgs/Calculator.PNG",
+        "https://github.com/Gbirla06/Portfolio/blob/main/src/images/ProjectImgs/Box_Office.PNG?raw=true",
       tags: ["React.js","REST API","HTML", "CSS", "JavaScript",],
       github: "https://github.com/Gbirla06/box-office-app",
       webapp: "https://box-office-app-seven.vercel.app/",
-    },
-    {
-      id: 4,
-      title: "Hotel Management",
-      date: "Nov 2021 - Dec 2021",
-      description:
-        "I built a project about Hotel Management in which I used an old version like turbo c++. There is no strong reason for that because I am very familiar with turbo and we dont need to do ant extra setup for graphics. That's it. I used purely c++, nothing else, like I was moving. You can see it in a small white circle on the menu. In this project I am maintaining data of customers like those taking service from a particular hotel, like(ROYAL PALACE). It contains a well designed menu in which you can see option like:      1)BOOKING 2)VIEW MAP 3)VIEW DATA 4)CHECK OUT 5)VIEW ALL 6)RESTAURENT 7)EXIT ",
-      image:
-        "../images/ProjectImgs/Calculator.PNG",
-      tags: ["C++","Graphics","Turbo C++", "Excel(.CSV)"],
-      github: "https://github.com/Gbirla06/Hotel_Management",
-      webapp: "https://box-office-app-seven.vercel.app/",
-    }
+    }    
   ];

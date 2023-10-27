@@ -50,7 +50,7 @@ const MobileIcon = styled.div`
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-100%,50%);
+        transform: translate(-100%,100%);
         font-size: 1.5rem;
         cursor: pointer;
         color: ${({theme}) => theme.text_primary};
@@ -131,7 +131,7 @@ const MobileMenu = styled.div`
   right: 0;
   width: 100%;
   padding: 12px 40px 24px 40px;
-  background: ${({theme}) => theme.card_light+99};
+  background-color: ${({theme}) => theme.card_light};
   transition: all 0.3s ease-in-out;
   transform: ${({open}) => (open ? 'translateX(0)' : 'translateX(100%)')};
   border-radius: 0 0 20 20px;
@@ -189,67 +189,38 @@ const NavBar = () => {
           <NavLink href="#contact">Contact</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GithubButton onClick={()=>{}}>Github Profile</GithubButton>
+          <GithubButton onClick={()=>{
+              window.open(Bio.github, '_blank');
+          }}>Github Profile</GithubButton>
         </ButtonContainer>
-      </NavContainer>
       {
         open && (
           <MobileMenu open={open}>
-            <MobileMenuLinks
-              href="#about"
-              onClick={() => {
-                setOpen(!open);
-              }}  
-            >
+            <MobileMenuLinks href="#about" onClick={() => { setOpen(!open); }}  >
               About
             </MobileMenuLinks>
-            <MobileMenuLinks
-              href="#skills"
-              onClick={() => {
-                setOpen(!open);
-              }}  
-            >
+            <MobileMenuLinks href="#skills" onClick={() => { setOpen(!open); }}  >
               Skills
             </MobileMenuLinks>
-            <MobileMenuLinks
-              href="#experience"
-              onClick={() => {
-                setOpen(!open);
-              }}  
-            >
+            <MobileMenuLinks href="#experience" onClick={() => { setOpen(!open); }}  >
               Experience
             </MobileMenuLinks>
-            <MobileMenuLinks
-              href="#projects"
-              onClick={() => {
-                setOpen(!open);
-              }}  
-            >
+            <MobileMenuLinks href="#projects" onClick={() => { setOpen(!open); }}  >
               Projects
             </MobileMenuLinks>
-            <MobileMenuLinks
-              href="#education"
-              onClick={() => {
-                setOpen(!open);
-              }}  
-            >
+            <MobileMenuLinks href="#education" onClick={() => { setOpen(!open); }}  >
               Education
             </MobileMenuLinks>
-            <GithubButton
-              style={{
-                padding: "10px 16px",
-                background: `${theme.primary}`,
-                color: "white",
-                width: "max-content",
-              }}  
-              href={Bio.githhub}
-              target="_blank"
-            >
+            
+            <GithubButton style={{ padding: "10px 16px", background: `${theme.primary}`, color: "white", width: "max-content" }} onClick={()=>{
+              window.open(Bio.github, '_blank');
+            }}>
               Github Profile
             </GithubButton>
           </MobileMenu>
         )
       }
+      </NavContainer>
     </Nav>
   );
 };
