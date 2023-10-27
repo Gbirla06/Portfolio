@@ -140,7 +140,7 @@ const MobileMenu = styled.div`
   z-index: ${({open}) => (open ? "1" : "-1")};
 `;
 
-const MobileMenuLinks  = styled(LinkR)`
+const MobileMenuLinks  = styled.a`
   color: ${({theme}) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
@@ -208,8 +208,11 @@ const NavBar = () => {
             <MobileMenuLinks href="#projects" onClick={() => { setOpen(!open); }}  >
               Projects
             </MobileMenuLinks>
-            <MobileMenuLinks href="#education" onClick={() => { setOpen(!open); }}  >
+            <MobileMenuLinks href="#educations" onClick={() => { setOpen(!open); }}  >
               Education
+            </MobileMenuLinks>
+            <MobileMenuLinks href="#contact" onClick={() => { setOpen(!open); }}  >
+              Contact
             </MobileMenuLinks>
             
             <GithubButton style={{ padding: "10px 16px", background: `${theme.primary}`, color: "white", width: "max-content" }} onClick={()=>{
