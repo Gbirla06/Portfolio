@@ -96,10 +96,10 @@ const Footer = () =>{
                     </NavItems>
 
                     <NavItems>
-                        <Social><a href="#About" target="display" class="sc-TRNrF ALeaV"><BsFacebook size="1.5rem" color="white"/></a></Social>
-                        <Social><a href={Bio.linkedin} target="display" class="sc-TRNrF ALeaV"><BsLinkedin size="1.5rem" color="white"/></a></Social>
-                        <Social><a href="#About" target="display" class="sc-TRNrF ALeaV"><BsTwitter size="1.5rem" color="white"/></a></Social>
-                        <Social><a href={Bio.insta} target="display" class="sc-TRNrF ALeaV"><BsInstagram size="1.5rem" color="white"/></a></Social>
+                        <Social><a href="#About" target="display" className="sc-TRNrF ALeaV"><BsFacebook size="1.5rem" color="white"/></a></Social>
+                        <Social><a href={Bio.linkedin} target="display" className="sc-TRNrF ALeaV"><BsLinkedin size="1.5rem" color="white"/></a></Social>
+                        <Social><a href="#About" target="display" className="sc-TRNrF ALeaV"><BsTwitter size="1.5rem" color="white"/></a></Social>
+                        <Social><a href={Bio.insta} target="display" className="sc-TRNrF ALeaV"><BsInstagram size="1.5rem" color="white"/></a></Social>
                     </NavItems>
                     <Copyright>© 2023 Ganesh Birla. All rights reserved.</Copyright>
                 </Desc>

@@ -84,6 +84,7 @@ const Description = styled.div`
 `;
 
 const ProjectCard = ({project}) =>{
+    
     return (<Card> 
             <Image src={project.image} alt="Project"/>
             <Tags>

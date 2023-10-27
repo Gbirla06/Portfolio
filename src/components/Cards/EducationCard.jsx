@@ -131,7 +131,6 @@ const Desc = styled.div`
 
 
 const EducationCard = ({education}) =>{
-    console.log(education);
     return (
         <Card>
             <Top>
