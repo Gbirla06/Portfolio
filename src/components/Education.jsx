@@ -12,6 +12,10 @@ const Container = styled.div`
     z-index: 1;
     align-items: center;
     padding: 50px 0px;
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
+
 `;
 const Wrapper = styled.div`
     max-width: 1100px;
@@ -56,7 +60,6 @@ const TimeLineSection = styled.div`
     justify-content: center;
     gap: 12px;
 `;
-
 
 const Experience = () => {
     return (

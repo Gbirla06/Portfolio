@@ -7,9 +7,15 @@ const Container = styled.div`
     z-index: 1;
     align-items: center;
     padding: 50px 0px;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 0;
+    }
     
 `;
 const Title = styled.div`
+    display: flex;
     font-size: 42px;
     font-weight: 600;
     text-align: center;
@@ -24,6 +30,7 @@ const Title = styled.div`
 `;
 
 const Desc = styled.div`
+    display: flex;
     font-size: 18px;
     max-width: 600px;
     text-align: center;
@@ -36,7 +43,7 @@ const Desc = styled.div`
 `;
 
 const Form = styled.form`
-    width: 650px;
+    width: 700px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0,0,0,1);
     padding: 12px 16px;
@@ -47,6 +54,9 @@ const Form = styled.form`
     flex-direction: column;
     gap: 12px;
     transition: all 0.3s ease-in-out;
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
 `;
 const Input = styled.input`
     padding: 10px;

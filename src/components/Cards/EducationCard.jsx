@@ -32,11 +32,14 @@ const Card = styled.div`
         box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
         transform: translateY(-5px);
     }
-
-    @media (max-width:768px) {
-        padding: 10px;
+    
+    @media screen and (max-width:768px) {
         gap: 8px;
-        width: 300px;
+        width: 400px;
+    }
+
+    @media screen and (max-width:400px) {
+        width: 100%;
     }
 
     border: 1px solid ${({theme}) =>theme.border};
@@ -54,7 +57,7 @@ const Logo = styled.img`
     border-radius: 10px;
     margin-top: 4px;
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         height: 40px;
     }
 `;
@@ -71,7 +74,7 @@ const Description = styled.div`
     font-weight: 400;
     color: ${({theme}) => theme.text_primary+99};
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         font-size: 12px; 
     }
 `;
@@ -92,7 +95,7 @@ const Degree = styled.div`
     font-weight: 500;
     color: ${({theme}) => theme.text_secondary+99};
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         font-size: 12px; 
     }
 `;
@@ -104,7 +107,7 @@ const Duration = styled.div`
     font-weight: 400;
     color: ${({theme}) => theme.text_secondary+99};
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         font-size: 10px; 
     }
 `;
@@ -114,7 +117,7 @@ const Grade = styled.div`
     font-weight: 500;
     color: ${({theme}) => theme.text_secondary+99};
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         font-size: 12px; 
     }
 `;
@@ -124,7 +127,7 @@ const Desc = styled.div`
     font-weight: 400;
     color: ${({theme}) => theme.text_primary+99};
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         font-size: 12px; 
     }
 `;

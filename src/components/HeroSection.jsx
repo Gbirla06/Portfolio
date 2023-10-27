@@ -74,11 +74,13 @@ const HeroRightContainer = styled.div`
         order: 1;
         justify-content: center;
         align-items: center;
+        padding: 0 20px;
         margin-bottom: 80px;
     }
     @media screen and (max-width: 640px) {
         order: 1;
         margin-bottom: 30px;
+        padding: 0 30px;
     }
 `;
 const Titles = styled.div`
