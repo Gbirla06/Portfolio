@@ -79,7 +79,7 @@ const Contact = () => {
                 <Input name="subject" type="subject" placeholder="Subject"/>
                 <Textarea name="textarea" placeholder="Your Query..." required/>
                 <Input type="hidden" name="_captcha" value="false"></Input>
-                {/* <Input type="hidden" name="_next" value="/"></Input> */}
+                <Input type="hidden" name="_next" value="https://portfolio-one-orpin-91.vercel.app/"></Input>
                 <Button>Submit</Button>
             </Form>
         </Container>

@@ -73,7 +73,7 @@ export const Bio = {
   export const experiences = [
     {
       id: 0,
-      img: "../images/All_Required_Imges/InternPe_logo.jpg",
+      img: "https://github.com/Gbirla06/Portfolio/blob/main/src/images/All_Required_Imges/InternPe_logo.jpg?raw=true",
       role: "Frontend Engineer Intern",
       company: "InternPe",
       date: "July 2023 - Aug 2023",
@@ -83,14 +83,14 @@ export const Bio = {
         "CSS",
         "JavaScript",
       ],
-      doc: "https://drive.google.com/file/d/143xZnH_kKjlEa7SUTN8rGKMOtmBRFd0m/view?usp=drive_link",
+      doc: "https://drive.google.com/file/d/1LGWJqzZuRutXKEmNwZnYgnEIVlcz5-kN/view?usp=drive_link",
     },
   ];
   
   export const educations = [
     {
       id: 0,
-      img: "../images/All_Required_Imges/NITP_logo.jpg",
+      img: "https://github.com/Gbirla06/Portfolio/blob/main/src/images/All_Required_Imges/NITP_logo.jpg?raw=true",
       school: "National Institute of Technology, Patna",
       date: "Nov 2020 - June 2024",
       grade: "8.12 CGPA",
@@ -99,7 +99,7 @@ export const Bio = {
     },
     {
       id: 1,
-      img: "../images/All_Required_Imges/JNV_logo.jpg",
+      img: "https://github.com/Gbirla06/Portfolio/blob/main/src/images/All_Required_Imges/JNV_logo.jpg?raw=true",
       school: "JNV Junapani Khargone",
       date: "Apr 2018 - Apr 2019",
       grade: "87.8%",
@@ -108,7 +108,7 @@ export const Bio = {
     },
     {
       id: 2,
-      img: "../images/All_Required_Imges/JNV_logo.jpg",
+      img: "https://github.com/Gbirla06/Portfolio/blob/main/src/images/All_Required_Imges/JNV_logo.jpg?raw=true",
       school: "JNV Junapani Khargone",
       date: "Apr 2016 - Apr 2017",
       grade: "9.4 CGPA",
@@ -125,7 +125,7 @@ export const Bio = {
       description:
         "The Simple Calculator project is a user-friendly, efficient, and versatile web application designed to perform basic arithmetic calculations. This project aims to provide users with a seamless and intuitive experience for performing addition, subtraction, multiplication, and division operations. The calculator's design emphasizes simplicity, making it accessible for users of all ages and backgrounds.",
       image:
-        "../images/ProjectImgs/Calculator.PNG",
+        "https://github.com/Gbirla06/Portfolio/blob/main/src/images/ProjectImgs/Calculator.PNG?raw=true",
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Gbirla06/Calculator",
       webapp: "https://gbirla06.github.io/Calculator/",
