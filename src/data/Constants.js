@@ -41,6 +41,41 @@ export const Bio = {
           image:
             "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
         },
+        {
+          name: "Typescript",
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+        },
+        {
+          name: "TailwindCSS  ",
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+        },
+      ],
+    },
+    {
+      title: "Backend",
+      skills: [
+        {
+          name: "Nodejs",
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+        },
+        {
+          name: "Expressjs",
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+        },
+        {
+          name: "MySql",
+          image:
+            "https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-securing-mysql-and-connecting-wso-servers-yasassri-blog-18.png",
+        },
+        {
+          name: "MongoDb",
+          image:
+            "https://webimages.mongodb.com/_com_assets/cms/kuyj3d95v5vbmm2f4-horizontal_white.svg?auto=format%252Ccompress",
+        },
       ],
     },
     {
