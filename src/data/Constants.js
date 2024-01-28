@@ -212,5 +212,17 @@ export const Bio = {
       tags: ["React.js","REST API","HTML", "CSS", "JavaScript",],
       github: "https://github.com/Gbirla06/box-office-app",
       webapp: "https://box-office-app-seven.vercel.app/",
+    },   
+    {
+      id: 5,
+      title: "Text Utils Web App",
+      date: "July 2022",
+      description:
+        "Designed a React web application that allows users to play with text-paragraph by performing different operations like copy to clipboard, remove extra space, toUpper, toLower etc",
+      image:
+        "https://github.com/Gbirla06/Portfolio/blob/main/src/images/ProjectImgs/text_utils.PNG?raw=true",
+      tags: ["React.js","HTML", "CSS", "JavaScript",],
+      github: "https://github.com/Gbirla06/Text_Utils/tree/main",
+      webapp: "https://text-utils-gbirla06.vercel.app/",
     }    
   ];
